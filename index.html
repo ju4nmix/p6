@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,900&display=swap" rel="stylesheet">
+    <style>
+            *{margin: 0;
+            padding:0;}
+            img{width:100%;}
+            :root {
+            --color-primary:#2C85AD;
+            --color-secundary:#0C3649;
+            --color-bg:#D9D9D9;
+            --color-black:#000000;
+            }
+    .card_txt{
+            display: flex,
+            flex-direction: column;
+            padding: 2em 0 0 0;
+            justify-content: baseline;
+            font-family: 'Roboto', sans-serif;
+
+            }
+    .card_txt h1{
+            padding:0 0 0em 0;
+            font-size:0.9em;
+            flex-grow:1;
+            color:var(--color-primary);
+            letter-spacing: 0.25em;
+            font-variant:small-caps
+
+    }
+    .card_txt h2{
+            padding:0 0 0.3em 0;
+            justify-content: right;
+            font-size:1.8em;   
+            flex-grow:0;
+            color:var(--color-secundary);
+            word-spacing:0em;
+            font-weight: 100;
+    }
+
+    .card_txt p{
+            padding: 0em 0 0 0;
+            font-weight: 100em;
+            font-size: 16px;
+            font-weight: 100;
+            color: var(--color-black);
+    }
+    
+    .gallery{
+            display: flex;
+            flex-wrap:wrap;
+            gap:1em;
+            background-color: #0C3649;
+            padding:1em;
+            }
+    .card-nth:child(2) .card-nth:child(3){
+            flex:1 3 60%;
+            }
+    .card{
+            display:flex;
+            flex-grow: 1;
+            flex-basis: 26%;
+            flex-direction: column;
+            border:solid 0.3em var(--color-secundary);
+            background-color: var(--color-bg);
+            padding: 1em;
+            }
+    .card:nth-child(2), .card-nth:child(5){
+            flex: 1 1 60%;
+        } 
+
+
+    .card_img{
+            object-position: top;
+            width: 100;
+            height: 224px;
+        }
+    .card_img img{object-fit:cover;
+            height: 100%;}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/vangogh.jpg" alt="0">
+                </figure> <!--igual que el header pero para añadir imagenes-->
+                <header class="card_txt">
+                    <h1>vincent van gogh</h1>
+                    <h2>Autorretrato</h2>
+                    <p>Es un autorretrato de Vincent Van Gogh</p>
+
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg" alt="0">
+                </figure> 
+                <header class="card_txt">
+                    <h1>Francisco de Goya y Lucientes</h1>
+                    <h2>Saturno devorando a sus hijos</h2>
+                    <p>El titán saturno se come a su hijo</p>
+ 
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/vangogh.jpg" alt="0">
+                </figure> <!--igual que el header pero para añadir imagenes-->
+                <header class="card_txt">
+                    <h1>Vincent Van Gogh</h1>
+                    <h2>Autorretrato</h2>
+                    <p>Es un autorretrato de Vincent Van Gogh</p>
+
+                </header>
+            </div>
+            
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg" alt="0">
+                </figure> 
+                <header class="card_txt">
+                    <h1>Francisco de Goya y Lucientes</h1>
+                    <h2>Saturno devorando a sus hijos</h2>
+                    <p>El titán saturno se come a su hijo</p>
+
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/vangogh.jpg" alt="0">
+                </figure> <!--igual que el header pero para añadir imagenes-->
+                <header class="card_txt">
+                    <h1>Vincent Van Gogh</h1>
+                    <h2>Autorretrato</h2>
+                    <p>Es un autorretrato de Vincent Van Gogh</p>
+
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg" alt="0">
+                </figure> 
+                <header class="card_txt">
+                    <h1>Francisco de Goya y Lucientes</h1>
+                    <h2>Saturno devorando a sus hijos</h2>
+                    <p>El titán saturno se come a su hijo</p>
+
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
